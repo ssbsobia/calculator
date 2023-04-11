@@ -60,7 +60,8 @@
                 let lastChar=outputScreen.value[outputScreen.value.length-1];
                 if(lastChar=='+' || lastChar=='-'|| lastChar=='*'|| lastChar=='/')
                 {
-
+ let temp=outputScreen.value.replace(lastChar ,val);
+                        outputScreen.value=temp;
                 }else {
                     outputScreen.value+=val;
                 }
